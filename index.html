@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-icon-tiny.png" >
+		<title>SF-DataViz</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/embed-adjust.js"></script>
+	<head>
+	<style>
+		html,body {
+					padding-top: 5px;
+					padding-left: 10px;
+		}
+		h1, h2, h3, h4, span {
+			font-family: Verdana, Geneva, sans-serif !important;
+			margin-left: 15px;
+		}
+		.logo img {
+			display: block;
+			position: relative;
+			float: left;
+			margin-right: 25px;
+		}
+		#charts {
+			margin-left: 15px;
+		}
+	</style>
+	<body>
+		<div id="header">
+			<a id="logo" href="http://www.savannah.vc/" title="Return to the homepage">
+  				<img src="https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-logo-med.png" alt="SF logo" />
+			</a>
+			<span><b>Savannah Stats 2013</b></span>
+		</div>
+		<div id="charts">
+			<!-- Paste Chart iFrame here -->
+					<iframe width="640" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col2%2C+col5%2C+col6%2C+col7%2C+col8+from+1e7VsJzKRt-6zZM__lcPPR8ZnHAyEewgfEjf_hNYN+where+col0+%3E%3D+&#39;2014-04-14+00%3A00%3A00&#39;+and+col0+%3C%3D+&#39;2014-04-21+00%3A00%3A00&#39;+order+by+col2+asc+limit+10&amp;viz=GVIZ&amp;t=BAR&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22title%22%3A%22Team+Members%22%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A%2211%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D&amp;gco_legend=bottom&amp;gco_title=BRCK+Summary+Values&amp;gco_fontName=Verdana&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23e69138%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23f1c232%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%236aa84f%22%7D%2C+%223%22%3A%7B%22color%22%3A%22%2345818e%22%7D%7D&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A%2211%22%7D&amp;width=640&amp;height=400"></iframe>
+
+			<!-- Paste Report Card iFrame here -->
+					<iframe width="700" height="400" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=CARD&amp;q=select+*+from+1e7VsJzKRt-6zZM__lcPPR8ZnHAyEewgfEjf_hNYN+where+col0+%3E%3D+&#39;2014-04-14+00%3A00%3A00&#39;+and+col0+%3C%3D+&#39;2014-04-21+00%3A00%3A00&#39;+order+by+col2+asc&amp;tmplt=1&amp;cpr=1"></iframe>
+		</div>
+
+	</body>
+</html>
+
+<!-- TODO
+* Make responsive
+* Add logos and photos
+* Automate with apps script
+* Link to chart: https://www.google.com/fusiontables/data?docid=1e7VsJzKRt-6zZM__lcPPR8ZnHAyEewgfEjf_hNYN#rows:id=1 -->
