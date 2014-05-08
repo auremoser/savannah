@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-icon-tiny.png" >
+		<title>SF-DataViz</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/embed-adjust.js"></script>
+	<head>
+	<style>
+		html,body {
+					padding-top: 5px;
+					padding-left: 10px;
+		}
+		h1, h2, h3, h4 {
+			font-family: Ariel, sans-serif !important;
+			margin-left: 15px;
+		}
+		span {
+			font-family: Ariel, sans-serif !important;
+			font-size: 36px;
+			float: right !important;
+			padding-right: 30px;
+			padding-top: 20px;
+			font-weight: bold;
+			color: #86925D;
+		}
+		hr {
+			color: #A5B06E;
+			background-color: #A5B06E;
+			height: 5px;
+			margin-bottom: 20px;
+		}
+		.container {
+			width: 960;
+		}
+		.logo img {
+			display: block;
+			position: relative;
+			float: left;
+			margin-right: 25px;
+		}
+		.header {
+			background: #000;
+			opacity: 0.8;
+    	height:50px;
+    	width: 100%;
+    	position: fixed;
+    	z-index: 100000;
+    	background:#F0F0F0;
+    	border:1px solid #CCC;
+    	width:960px;
+    	margin:0px auto;
+		}
+		.total_chart {
+			margin-left: 15px;
+			float: right !important;
+
+		}
+		#charts {
+			margin-left: 15px;
+			float: right !important;
+		}
+		#summary {
+			margin-left:15px;
+			float: left !important;
+		}
+	</style>
+	<body>
+	<div id="container">
+		<div id="header">
+			<a id="logo" href="http://www.savannah.vc/" title="Return to the homepage">
+  				<img src="https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-logo-med.png" alt="SF logo"/>
+			</a>
+			<span>First Year Startup Stats 2013</span>
+		</div>
+		<hr>
+		<div id="summary">
+			<!-- Paste Summary Reports iFrame here -->
+					<iframe width="500" height="555" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=CARD&amp;q=select+*+from+1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC+order+by+col0+asc&amp;tmplt=1&amp;cpr=1"></iframe>
+		</div>
+		<div id="total_chart">
+			<!-- Paste Charts iFrame here -->
+			<!-- Totals -->
+					<iframe width="800" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col14+from+1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC+order+by+col0+asc+limit+10&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3A%22Amt.+Spent+(%24)%22%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22slantedTextAngle%22%3A30%2C+%22slantedText%22%3Atrue%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D%7D&amp;gco_legend=none&amp;gco_title=Expense+Totals+by+Country+-+2013&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2220%22%2C+%22bold%22%3Atrue%7D&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23b7b7b7%22%7D%7D&amp;width=800&amp;height=600"></iframe>
+			<!-- End Totals -->
+		</div>
+			<br/>
+			<div class="charts">
+			<!-- Tech -->
+					<iframe width="600" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col1%2C+col2%2C+col3+from+1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC+order+by+col0+asc+limit+10&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3A%22Amt.+Spent+(%24)%22%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22logScale%22%3Afalse%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A%2214%22%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=true&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%7D%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22title%22%3A%22%22%2C+%22slantedTextAngle%22%3A30%2C+%22slantedText%22%3Atrue%7D&amp;gco_legend=bottom&amp;gco_backgroundColor=%7B%22fill%22%3A%22%23ffffff%22%7D&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23f4cccc%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23ea9999%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%23e06666%22%7D%7D&amp;gco_title=Tech+Expenses+-+2013&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2218%22%2C+%22bold%22%3Atrue%7D&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D&amp;gco_fontName=Arial&amp;width=600&amp;height=400"></iframe>
+			<!-- End Tech -->
+			<!-- Residency -->
+					<iframe width="700" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col5%2C+col6%2C+col11+from+1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC+order+by+col0+asc+limit+10&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3A%22Amt.+Spent+(%24)%22%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22logScale%22%3Afalse%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A%2214%22%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=true&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A%2214%22%7D%2C+%22title%22%3A%22%22%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22slantedTextAngle%22%3A30%2C+%22slantedText%22%3Atrue%7D&amp;gco_legend=right&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2218%22%2C+%22bold%22%3Atrue%7D&amp;gco_title=Residency+%2B+Mobility+Expenses+-+2013&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23fff2cc%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23ffe599%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%23ffd966%22%7D%7D&amp;width=700&amp;height=400"></iframe>
+			<!-- End Residency -->
+			<!-- Staffing -->
+					<iframe width="600" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col3%2C+col4+from+1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC+order+by+col0+asc+limit+10&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3A%22Amt.+Spent+(%24)%22%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22logScale%22%3Afalse%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A12%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=true&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A%2214%22%7D%2C+%22slantedTextAngle%22%3A30%2C+%22slantedText%22%3Atrue%7D&amp;gco_legend=bottom&amp;gco_title=Staffing+Expenses+-+2013&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2218%22%2C+%22bold%22%3Atrue%7D&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23f9cb9c%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23f6b26b%22%7D%7D&amp;width=600&amp;height=400"></iframe>
+			<!-- End Staffing -->
+			<!-- Operations -->
+					<iframe width="700" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col1%2C+col7%2C+col8%2C+col9%2C+col10%2C+col12+from+1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC+order+by+col0+asc+limit+10&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3A%22Amt.+Spent+(%24)%22%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22logScale%22%3Afalse%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2214%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=true&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D%2C+%22slantedTextAngle%22%3A30%2C+%22slantedText%22%3Atrue%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A12%2C+%22italic%22%3Atrue%7D%7D&amp;gco_legend=right&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23d9ead3%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23b6d7a8%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%2393c47d%22%7D%2C+%223%22%3A%7B%22color%22%3A%22%236aa84f%22%7D%2C+%224%22%3A%7B%22color%22%3A%22%2338761d%22%7D%2C+%225%22%3A%7B%22color%22%3A%22%23274e13%22%7D%7D&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A%2218%22%2C+%22bold%22%3Atrue%7D&amp;gco_title=Operational+Expenses+-+2013&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%7D&amp;width=700&amp;height=400"></iframe>
+			<!-- End Operations -->
+		</div>
+	</div>
+		<script src="js/header.js"></script>
+	</body>
+</html>
+
+<!-- TODO
+* Make responsive
+* Add logos and photos
+* Automate with apps script
+ -->
