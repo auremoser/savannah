@@ -2,6 +2,7 @@ SF Data
 =======
 
 sketches for savannah fund metrics project
+Demo here: <http://auremoser.github.io/savannah/>
 
 ###What is this?
 This is a simple chart and card view of the savannah fund data, to track startup costs for first-year companies in the following countries. 
@@ -13,10 +14,13 @@ This is a simple chart and card view of the savannah fund data, to track startup
 * at right (or below, depending on your screen size), small summary cards report the remaining form info by team member (again, alphabetical)
 
 
-![Mockup of Boardview]()
+![Mockup of Boardview](https://raw.githubusercontent.com/auremoser/savannah/master/assets/SF-fullView.png)
 
 ###FEATURES TO COME
 * more interactivity and complicated viz to come, parallel coordinates perhaps
+
+Here are some small multiples of some of the breakout cost categories:
+![Small Multiples](https://raw.githubusercontent.com/auremoser/savannah/master/assets/SF-small_multiples.png)
 
 DONE
 
