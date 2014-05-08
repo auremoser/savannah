@@ -1,7 +1,8 @@
-SF Data 
+![SF Data](https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-logo-large.png) 
 =======
 
 sketches for savannah fund metrics project
+
 Demo here: <http://auremoser.github.io/savannah/>
 
 ###What is this?
