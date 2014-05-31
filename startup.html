@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-ico-tiny.png" >
+	<title>SF-Parallel Coordinates</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="libs/d3.v3.min.js"></script>
+	<script src="libs/d3.parcoords.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/d3.parcoords.css">
+	<style>
+	.parcoords {
+		width: 660px;
+		height: 450px;
+		padding: 200px;
+	}
+	</style>
+
+	<div id="coords" class="parcoords"></div>
+
+<script>
+	var data = [
+	  ["Uganda",50,1000,2400,9600,3600,1440,1000,400,1000,3000,6000,29490],
+	  ["Tanzania",360,500,10200,24000,6000,1200,2000,500,700,3000,2000,50460],
+	  ["Kenya",100,564,3900,16200,3600,2880,1500,460,100,3000,2400,34704 ],
+	  ["Ghana",100,960,9000,24000,8000,2200,3000,1000,3000,4800,600,56660],
+	  ["South Africa",120,1200,17112,30000,12000,3840,1200,500,1200,3994,1000,72166],
+	  ["Nigeria",120,2000,4452,11160,9281,1240,1500,1000,3000,3000,2400,39153]
+	];
+
+	var pc = d3.parcoords()("#coords")
+	  .data(data)
+	  .render()
+	  .ticks(6)
+  .createAxes();
+</script>
