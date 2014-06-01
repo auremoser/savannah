@@ -10,27 +10,49 @@
 	<link rel="stylesheet" type="text/css" href="assets/d3.parcoords.css">
 	<style>
 	.parcoords {
-		width: 660px;
-		height: 450px;
-		padding: 200px;
+		width: 960px;
+		height: 350px;
+		padding: 20px;
 	}
+
+	.axis > text {
+		-webkit-transform-origin: 0 0;
+		-webkit-transform: rotate(-30deg);
+		font-weight: bold;
+	}
+
 	</style>
 
 	<div id="coords" class="parcoords"></div>
 
 <script>
-	var data = [
-	  ["Uganda",50,1000,2400,9600,3600,1440,1000,400,1000,3000,6000,29490],
-	  ["Tanzania",360,500,10200,24000,6000,1200,2000,500,700,3000,2000,50460],
-	  ["Kenya",100,564,3900,16200,3600,2880,1500,460,100,3000,2400,34704 ],
-	  ["Ghana",100,960,9000,24000,8000,2200,3000,1000,3000,4800,600,56660],
-	  ["South Africa",120,1200,17112,30000,12000,3840,1200,500,1200,3994,1000,72166],
-	  ["Nigeria",120,2000,4452,11160,9281,1240,1500,1000,3000,3000,2400,39153]
-	];
 
-	var pc = d3.parcoords()("#coords")
-	  .data(data)
-	  .render()
-	  .ticks(6)
-  .createAxes();
+	var colorScale = d3.scale.category10()
+
+	d3.tsv('data.tsv', function(data) {
+		console.log(data)
+
+		var pc = d3.parcoords()("#coords")
+		  .data(data)
+		  .ticks(4)
+		  .margin({
+		  	top: 90,
+		  	right: 0,
+		  	bottom: 10,
+		  	left: 80
+		  })
+		  .color(function(d){ return colorScale(d.country) })
+			.render()
+			.shadows()
+	    .brushable()
+			// .createAxes();
+
+		d3.selectAll('.axis > text')
+			.attr('text-anchor', 'start')
+
+	})
+
 </script>
+
+
+
