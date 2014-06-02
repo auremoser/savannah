@@ -9,50 +9,49 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/d3.parcoords.css">
 	<style>
-	.parcoords {
-		width: 960px;
-		height: 350px;
-		padding: 20px;
-	}
+		.parcoords {
+			width: 960px;
+			height: 350px;
+			padding: 20px;
+		}
 
-	.axis > text {
-		-webkit-transform-origin: 0 0;
-		-webkit-transform: rotate(-30deg);
-		font-weight: bold;
-	}
-
+		.axis > text {
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: rotate(-30deg);
+			/*font-weight: bold;*/
+			font-size: 12px;
+		}
 	</style>
 
 	<div id="coords" class="parcoords"></div>
 
-<script>
+	<script>
 
-	var colorScale = d3.scale.category10()
+		var colorScale = d3.scale.category10()
 
-	d3.tsv('data.tsv', function(data) {
-		console.log(data)
+		d3.tsv('data.tsv', function(data) {
+			console.log(data)
 
-		var pc = d3.parcoords()("#coords")
-		  .data(data)
-		  .ticks(4)
-		  .margin({
-		  	top: 90,
-		  	right: 0,
-		  	bottom: 10,
-		  	left: 80
-		  })
-		  .color(function(d){ return colorScale(d.country) })
-			.render()
-			.shadows()
-	    .brushable()
-			// .createAxes();
+			var pc = d3.parcoords()("#coords")
+			  .data(data)
+			  .ticks(5)
+			  .margin({
+			  	top: 90,
+			  	right: 0,
+			  	bottom: 10,
+			  	left: 80
+			  })
+			  .color(function(d){ return colorScale(d.country) })
+				.render()
+				.shadows()
+		    .brushable()
 
-		d3.selectAll('.axis > text')
-			.attr('text-anchor', 'start')
+			d3.selectAll('.axis > text')
+				.attr('text-anchor', 'start')
 
-	})
+		})
 
-</script>
+	</script>
 
 
 
