@@ -1,4 +1,4 @@
-![SF Data](https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-logo-large.png) 
+![SF Data](https://raw.githubusercontent.com/auremoser/savannah/master/assets/logo/sf-logo-large.png)
 =======
 
 sketches for savannah fund metrics project
@@ -6,7 +6,7 @@ sketches for savannah fund metrics project
 Demo here: <http://auremoser.github.io/savannah/>
 
 ###What is this?
-This is a simple chart and card view of the savannah fund data, to track startup costs for first-year companies in the following countries. 
+This is a simple chart and card view of the savannah fund data, to track startup costs for first-year companies in the following countries.
 
 ###How does it work?
 * [fusion chart here](https://www.google.com/fusiontables/DataSource?docid=1mDymICnSNUI_mrSbQhSyLR_XHaW4g6ud2Tn4DijC) answers are mapped to this page, but the layout differs
@@ -22,6 +22,8 @@ This is a simple chart and card view of the savannah fund data, to track startup
 
 Here are some small multiples of some of the breakout cost categories:
 ![Small Multiples](https://raw.githubusercontent.com/auremoser/savannah/master/assets/SF-small_multiples.png)
+Also, the parallel coordinates test with spreadsheet data from the First Year Startups:
+![Parallel Coords](https://raw.githubusercontent.com/auremoser/savannah/master/assets/SF-parallel-coords.png)
 
 DONE
 
